@@ -1,0 +1,30 @@
+div.perfil-photo {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+
+div.perfil-photo img.bg-profile-photo {
+  height: 100px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+div.perfil-photo img.profile-photo {
+  height: 100px;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  transition: height ease-in 0.3s;
+}
+
+div.perfil-photo:hover img.profile-photo {
+  height: 150px;
+}
+
+div.perfil-photo:hover img.bg-profile-photo {
+  filter: grayscale();
+}
