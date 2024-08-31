@@ -1,0 +1,75 @@
+/* 
+  Quando a tela for menor que o valor de cada max-width
+  será atribuido um estilo diferente 
+  para disposição do conteúdo
+*/
+
+@media screen and (max-width: 1880px) {
+  nav.header-navegation {
+    width: 100%;
+    background-color: var(--color-light-blue);
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    transform: rotate(0deg);
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  nav.header-navegation ul li a {
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.1);
+    transition: background-color ease-in-out 0.5s, box-shadow ease-in-out 0.5s,
+      padding ease-in-out 0.5s;
+  }
+}
+
+@media screen and (max-width: 920px) {
+
+  main .apresentacao {
+    min-height: 400px;
+  }
+
+  main .apresentacao h1 {
+    font-size: 3em;
+  }
+
+  main .sobre-mim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 0 solid var(--color-light-blue);
+    border-bottom: 0 solid var(--color-light-blue);
+  }
+
+  main .section-description {
+    width: 100%;
+  }
+
+  /* Foto de perfil */
+
+  .sobre-mim div.perfil-photo {
+    position: relative;
+    width: 50%;
+  }
+
+  .sobre-mim div.perfil-photo::after {
+    background-image: none;
+  }
+
+  .sobre-mim div.perfil-photo img.profile-photo {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: width ease-in-out 0.5s, filter ease-in-out 0.5s;
+  }
+
+  .sobre-mim div.perfil-photo:hover img.profile-photo {
+    width: 110%;
+    filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.2));
+  }
+ 
+}
