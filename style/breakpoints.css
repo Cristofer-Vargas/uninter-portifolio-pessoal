@@ -28,12 +28,38 @@
 
 @media screen and (max-width: 920px) {
 
+  :root {
+    --max-content-padding: 20px;
+    font-size: 14px;
+  }
+
+  nav.header-navegation {
+    gap: 10px;
+  }
+
+  nav.header-navegation ul {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  nav.header-navegation ul li {
+    align-items: center;
+  }
+
+  nav.header-navegation ul li a {
+    padding: 10px 0px;
+  }
+
+  nav.header-navegation ul li a:hover {
+    padding: 10px 10px 10px;
+  }
+
   main .apresentacao {
-    min-height: 400px;
+    min-height: 200px;
   }
 
   main .apresentacao h1 {
-    font-size: 3em;
+    font-size: 4em;
   }
 
   main .sobre-mim {
@@ -53,23 +79,40 @@
   .sobre-mim div.perfil-photo {
     position: relative;
     width: 50%;
+    height: auto;
   }
 
   .sobre-mim div.perfil-photo::after {
-    background-image: none;
+    display: none;
   }
 
   .sobre-mim div.perfil-photo img.profile-photo {
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    transition: width ease-in-out 0.5s, filter ease-in-out 0.5s;
+    position: relative;
   }
 
   .sobre-mim div.perfil-photo:hover img.profile-photo {
     width: 110%;
     filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.2));
   }
- 
+
+  .portifolio figure.portifolio-img {
+    width: 70%;
+  }
+
+}
+
+@media screen and (max-width: 420px) {
+  :root {
+    font-size: 10px;
+  }
+  
+  .sobre-mim div.perfil-photo {
+    width: 80%;
+  }
+
+  .portifolio-container .portifolio-projetos > div > div.projetos-img {
+    width: 60%;
+  }
+
 }

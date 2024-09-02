@@ -47,7 +47,7 @@ body {
 
 .section-title {
   font-family: "Poppins", sans-serif;
-  font-size: 3em;
+  font-size: 3rem;
   margin: 20px 0;
   color: cornflowerblue;
   text-transform: uppercase;
@@ -62,15 +62,14 @@ section .description-title {
 }
 
 section .description-text {
-  line-height: 1.6em;
-  font-size: 1.2em;
-  
+  line-height: 1.6rem;
+  font-size: 1.2rem;
 }
 
 strong {
   font-weight: 800;
-  color: var(--color-dark-blue);
-  text-shadow: 1px 1px rgba(255, 255, 255, 0.2);
+  color: rgb(65, 187, 253);
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.1);
 
 }
 
@@ -103,7 +102,7 @@ nav.header-navegation ul li a {
   background-color: var(--color-light-blue);
   color: #fff;
   font-weight: 600;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   border-radius: 8px 8px 0px 0px;
   box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.10);
   transition: background-color ease-in-out 0.5s, box-shadow ease-in-out 0.5s, padding ease-in-out 0.5s;
@@ -138,7 +137,7 @@ main .apresentacao {
 
 main .apresentacao h1 {
   color: var(--color-light-blue);
-  font-size: 6em;
+  font-size: 3rem;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
 }
@@ -190,10 +189,6 @@ main .section-description {
   filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.2));
 }
 
-
-/* Sessão 'Formação' */
-
-
 /* Sessão 'Projetos' */
 
 .portifolio {
@@ -217,6 +212,7 @@ main .section-description {
   padding: 10px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
   border: 2px solid var(--color-dark-blue);
   border-radius: 8px;
@@ -226,7 +222,7 @@ main .section-description {
   text-decoration: none;
   color: var(--color-dark-blue);
   font-weight: 900;
-  font-size: 1.2em;
+  font-size: 1.3rem;
   text-align: center;
 }
 
@@ -259,7 +255,7 @@ main .section-description {
 
 .portifolio .portifolio-description h3 {
   color: #ff0000;
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 /* Estilização  do Rodapé da página */
@@ -284,7 +280,7 @@ footer .contato form {
 
 footer .contato form label {
   font-weight: 600;
-  font-size: 1.6em;
+  font-size: 1.6rem;
   margin: 4px 0;
 }
 
@@ -311,7 +307,7 @@ footer .contato form input[type='submit'] {
   outline: none;
   cursor: pointer;
   font-weight: 900;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   text-transform: uppercase;
   background-color: var(--color-light-blue);
   color: #fff;
